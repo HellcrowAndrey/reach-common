@@ -31,7 +31,8 @@ public class PayloadCollectors {
         return new ToLinkedHashSet<>(converter);
     }
 
-    private static class ToArrayList<T, R> implements Collector<T, List<R>, List<R>> {
+    private static class
+    ToArrayList<T, R> implements Collector<T, List<R>, List<R>> {
 
         private final Function<T, R> converter;
 
